@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}login Check{% endblock %}
+{% block body %}
+    <h2>login Check</h2>
+{% if error %}
+    <div class=error><strong>Error:</strong> {{ error }}</div>
+{% endif %}
+    <form action="" method=post>
+        <dl>
+
+        </dl>
+        <div class=actions><input type=submit value="login Check"></div>
+    </form>
+{% endblock %}
