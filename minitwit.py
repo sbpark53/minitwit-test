@@ -2,7 +2,6 @@
 
 from __future__ import with_statement
 import time
-from audioop import error
 from sqlite3 import dbapi2 as sqlite3
 from hashlib import md5
 from datetime import datetime
@@ -39,7 +38,7 @@ def before_request():
     g.db = connect_db()
     g.user = None
     if 'user_id' in session:
-        g.user = query_db('select * from user where user_id = ?', [session['user_id']], one = True)
+        g.user = query_db('select * from user where user_id = ?', [session['user_id']], one=True)
 
 @app.teardown_request
 def teardown_request(exception):
@@ -282,7 +281,7 @@ def calculate2():
         cal = None
 
     if request.method == 'POST':
-        if request.form['num'] !='' and request.form['num2']!='':
+        if request.form['num']!='' and request.form['num2']!='':
             a = request.form['num']
             b = request.form['num2']
             return redirect(url_for('sessions'))

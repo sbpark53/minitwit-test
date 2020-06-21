@@ -23,17 +23,17 @@ Calculator
             <h5> 숫자2 입력이 안되었습니다. </h5>
         {% else %}
             {% if cal == '+' %}
-                <p>{{num}} + {{num2}} = {{num3}}</br></p>
+                <p>{{num}} + {{num2}} = {{num3}}<br></p>
             {% elif cal == '-' %}
-                <p>{{num}} - {{num2}} = {{num3}}</br></p>
+                <p>{{num}} - {{num2}} = {{num3}}<br></p>
             {% elif cal == '*' %}
-                <p>{{num}} * {{num2}} = {{num3}}</br></p>
+                <p>{{num}} * {{num2}} = {{num3}}<br></p>
             {% elif cal == '/' %}
-                <p>{{num}} / {{num2}} = {{num3}}</br></p>
+                <p>{{num}} / {{num2}} = {{num3}}<br></p>
             {% else %}
                 <h5> 연산 오류 </h5>
             {% endif %}
         {% endif %}
-    </p>
+
 </div>
 {% endblock %}
