@@ -11,6 +11,11 @@ from flask import Flask, request, session, url_for, redirect, \
     render_template, abort, g, flash
 from werkzeug.security import check_password_hash, generate_password_hash
 
+a = None
+b = None
+c = None
+cal = None
+
 #configuration
 DATABASE = 'minitwit.db'
 PER_PAGE = 30
